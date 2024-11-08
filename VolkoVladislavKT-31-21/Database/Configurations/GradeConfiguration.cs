@@ -55,14 +55,6 @@ namespace VolkoVladislavKT_31_21.Database.Configurations
                 .HasForeignKey(g => g.SubjectId)
                 .HasConstraintName($"fk_{TableName}_subject_id")
                 .OnDelete(DeleteBehavior.Cascade);
-
-            builder
-                .Navigation(g => g.Student)
-                .AutoInclude();
-
-            builder
-                .Navigation (g => g.Subject)
-                .AutoInclude();
         }
     }
 }

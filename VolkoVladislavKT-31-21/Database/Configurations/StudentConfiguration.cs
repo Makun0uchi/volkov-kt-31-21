@@ -57,18 +57,6 @@ namespace VolkoVladislavKT_31_21.Database.Configurations
             builder
                 .ToTable(TableName)
                 .HasIndex(s => s.GroupId, $"idx_{TableName}_fk_f_group_id");
-
-            builder
-                .Navigation(s => s.Group)
-                .AutoInclude();
-
-            builder
-                .Navigation(s => s.Grades)
-                .AutoInclude();
-
-            builder
-                .Navigation(s => s.Tests)
-                .AutoInclude();
         }
     }
 }

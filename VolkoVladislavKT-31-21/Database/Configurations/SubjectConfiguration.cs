@@ -31,6 +31,13 @@ namespace VolkoVladislavKT_31_21.Database.Configurations
                 .HasMaxLength(255)
                 .IsRequired();
 
+            builder.Property(s => s.SubjectType)
+                .HasColumnName("с_subject_type")
+                .HasComment("Направление дисциплины")
+                .HasColumnType(ColumnType.String)
+                .HasMaxLength(255)
+                .IsRequired();
+
             builder.Property(s => s.isDeleted)
                 .HasColumnName("b_deleted")
                 .HasComment("Мягкое удаление")

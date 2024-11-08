@@ -1,4 +1,6 @@
-﻿namespace VolkoVladislavKT_31_21.Models
+﻿using System.Text.Json.Serialization;
+
+namespace VolkoVladislavKT_31_21.Models
 {
     public class Student
     {

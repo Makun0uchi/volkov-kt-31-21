@@ -4,7 +4,7 @@ namespace VolkoVladislavKT_31_21.Models
 {
     public class Subject
     {   
-        public enum SubjectType
+        public enum SubjectNameType
         {
             [Display(Name = "Гуманитарный")]
             HumanisticSubject,
@@ -13,7 +13,8 @@ namespace VolkoVladislavKT_31_21.Models
         }
 
         public int SubjectId { get; set; }
-        public SubjectType SubjectName { get; set; }
+        public string SubjectName { get; set; }
+        public SubjectNameType SubjectType { get; set; }
         public bool isDeleted { get; set; }
     }
 }
